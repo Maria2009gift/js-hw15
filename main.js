@@ -2,126 +2,126 @@
 
 // =====1=====
 
-// const user = {
-//     name: 'Mango',
-//     age: 20,
-//     hobby: 'html',
-//     premium: true,
-// }
+const user = {
+    name: 'Mango',
+    age: 20,
+    hobby: 'html',
+    premium: true,
+}
 
-// let {name, age, hobby, premium, mood} = user
+let {name, age, hobby, premium, mood} = user
 
-// user.mood = "happy"
-// hobby = "skydiving"
-// premium = false
+user.mood = "happy"
+hobby = "skydiving"
+premium = false
 
-// for (const i of Object.keys(user)) {
-//     console.log(i, ":", user[i])
-// }
+for (const i of Object.keys(user)) {
+    console.log(i, ":", user[i])
+}
 
 // =====2=====
 
-// const lenght = {
-//     mail: 'poly@mail.com', 
-//     isOnline: true, 
-//     score: 500
-// }
+const lenght = {
+    mail: 'poly@mail.com', 
+    isOnline: true, 
+    score: 500
+}
 
-// const {mail, isOnline, score} = lenght
+const {mail, isOnline, score} = lenght
 
-// function countMet(obj) {
-//     return console.log(Object.keys(obj).length)
-// }
+function countMet(obj) {
+    return console.log(Object.keys(obj).length)
+}
 
-// countMet(lenght)
+countMet(lenght)
 
 // =====3=====
 
-// function findBestEmployee(employees) {
-//     let maxTasks = 0;
-//     let bestEmployee = ''
+function findBestEmployee(employees) {
+    let maxTasks = 0;
+    let bestEmployee = ''
   
-//     for (const employee in employees) {
-//       const tasksCompleted = employees[employee]
-//       if (tasksCompleted > maxTasks) {
-//         maxTasks = tasksCompleted
-//         bestEmployee = employee
-//       }
-//     }
+    for (const employee in employees) {
+      const tasksCompleted = employees[employee]
+      if (tasksCompleted > maxTasks) {
+        maxTasks = tasksCompleted
+        bestEmployee = employee
+      }
+    }
   
-//     console.log("Найкращий працівник:", bestEmployee)}
+    console.log("Найкращий працівник:", bestEmployee)}
 
-// findBestEmployee({
-//     ann: 29,
-//     david: 35,
-//     helen: 1,
-//     lorence: 99,
-// })
+findBestEmployee({
+    ann: 29,
+    david: 35,
+    helen: 1,
+    lorence: 99,
+})
 
-// const {ann, david, helen, lorence} = findBestEmployee
+const {ann, david, helen, lorence} = findBestEmployee
 
 // =====4=====
 
-// function countTotalSalary(employees) {
-//     let maxSalary = 0;
+function countTotalSalary(employees) {
+    let maxSalary = 0;
 
-//     let salary = Object.values(employees)
-//     for (const i of salary) {
-//         maxSalary += i
-//     }  
-//     console.log(maxSalary)
-// }
+    let salary = Object.values(employees)
+    for (const i of salary) {
+        maxSalary += i
+    }  
+    console.log(maxSalary)
+}
 
-// countTotalSalary({
-//     mango: 100,
-//     poly: 150,
-//     alfred: 80,
-// })
+countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+})
 
-// const {mango, poly, alfred} = countTotalSalary
+const {mango, poly, alfred} = countTotalSalary
 
 // =====5=====
 
-// const products5 = [
-//     { name: 'Радар', price: 1300, quantity: 4 },
-//     { name: 'Сканер', price: 2700, quantity: 3 },
-//     { name: 'Дроїд', price: 400, quantity: 7 },
-//     { name: 'Захоплення', price: 1200, quantity: 2 },
-// ]
+const products5 = [
+    { name: 'Радар', price: 1300, quantity: 4 },
+    { name: 'Сканер', price: 2700, quantity: 3 },
+    { name: 'Дроїд', price: 400, quantity: 7 },
+    { name: 'Захоплення', price: 1200, quantity: 2 },
+]
 
-// const [obj1, obj2, obj3, obj4] = products5
+const [obj1, obj2, obj3, obj4] = products5
 
-// function getAllPropValues(arr, prop) {
-//     for (const i of arr) {
-//         console.log(i[prop])
-//     }
-// }
+function getAllPropValues(arr, prop) {
+    for (const i of arr) {
+        console.log(i[prop])
+    }
+}
 
-// getAllPropValues(products5, "name")
+getAllPropValues(products5, "name")
 
 // =====6=====
 
-// const products = [
-//     { name: 'Радар', price: 1300, quantity: 4 },
-//     { name: 'Сканер', price: 2700, quantity: 3 },
-//     { name: 'Дроїд', price: 400, quantity: 7 },
-//     { name: 'Захоплення', price: 1200, quantity: 2 },
-// ]
+const products = [
+    { name: 'Радар', price: 1300, quantity: 4 },
+    { name: 'Сканер', price: 2700, quantity: 3 },
+    { name: 'Дроїд', price: 400, quantity: 7 },
+    { name: 'Захоплення', price: 1200, quantity: 2 },
+]
 
-// const [prod1, prod2, prod3, prod4] = products
+const [prod1, prod2, prod3, prod4] = products
 
-// function calculateTotalPrice(allProdcuts, productName) {
-//     let allPrice = 0
+function calculateTotalPrice(allProdcuts, productName) {
+    let allPrice = 0
 
-//     for (const product of allProdcuts) {
-//         if (product.name === productName) {
-//           allPrice += product.price * product.quantity;
-//         }
-//       }
-//       console.log(allPrice)
-// }
+    for (const product of allProdcuts) {
+        if (product.name === productName) {
+          allPrice += product.price * product.quantity;
+        }
+      }
+      console.log(allPrice)
+}
 
-// calculateTotalPrice(products, 'Радар')
+calculateTotalPrice(products, 'Радар')
 
 // =====7=====
 
